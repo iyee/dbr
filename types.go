@@ -96,7 +96,7 @@ func (n *NullString) UnmarshalJSON(b []byte) error {
 
 // UnmarshalJSON correctly deserializes a NullInt64 from JSON
 func (n *NullInt64) UnmarshalJSON(b []byte) error {
-	var s interface{}
+	var s int64
 	if err := json.Unmarshal(b, &s); err != nil {
 		return err
 	}
