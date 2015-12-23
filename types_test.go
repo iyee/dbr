@@ -90,7 +90,7 @@ func newNullTypedRecordWithData() *nullTypedRecord {
 		StringVal:  NullString{sql.NullString{String: "wow", Valid: true}},
 		Int64Val:   NullInt64{sql.NullInt64{Int64: 42, Valid: true}},
 		Float64Val: NullFloat64{sql.NullFloat64{Float64: 1.618, Valid: true}},
-		TimeVal:    NullTime{mysql.NullTime{Time: time.Date(2009, 1, 3, 18, 15, 5, 0, time.UTC), Valid: true}},
+		TimeVal:    NullTime{mysql.NullTime{Time: time.Date(2009, 1, 3, 18, 15, 5, 0, time.Local), Valid: true}},
 		BoolVal:    NullBool{sql.NullBool{Bool: true, Valid: true}},
 	}
 }

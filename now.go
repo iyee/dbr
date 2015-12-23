@@ -13,6 +13,6 @@ var timeFormat = "2006-01-02 15:04:05"
 
 // Value implements a valuer for compatibility
 func (n nowSentinel) Value() (driver.Value, error) {
-	now := time.Now().UTC().Format(timeFormat)
+	now := time.Now().Local().Format(timeFormat)
 	return now, nil
 }

@@ -156,7 +156,7 @@ func Interpolate(sql string, vals []interface{}) (string, error) {
 			} else if kindOfV == reflect.Struct {
 				if typeOfV := valueOfV.Type(); typeOfV == typeOfTime {
 					t := valueOfV.Interface().(time.Time)
-					buf.WriteString(escapeAndQuoteString(t.UTC().Format(timeFormat)))
+					buf.WriteString(escapeAndQuoteString(t.Local().Format(timeFormat)))
 				} else {
 					return "", ErrInvalidValue
 				}
