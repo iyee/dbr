@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-sql-driver/mysql"
+	"github.com/meican-dev/mysql"
 	"github.com/stretchr/testify/assert"
 )
 

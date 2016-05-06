@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/go-sql-driver/mysql"
+	"github.com/meican-dev/mysql"
 )
 
 //
